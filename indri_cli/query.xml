@@ -1,0 +1,9 @@
+<parameters>
+	<index>/home/dannycho7/test-indri/index</index>
+	<count>2000</count>
+	<trecFormat>true</trecFormat>
+	<query>
+		<number>301</number>
+		<text>international organized crime</text>
+	</query>
+</parameters>

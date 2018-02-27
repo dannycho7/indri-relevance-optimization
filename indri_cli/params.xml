@@ -1,0 +1,7 @@
+<parameters>
+	<index>/home/dannycho7/test-indri/index</index>
+	<corpus>
+		<path>/mnt/data1/jinjin/trec45_data/trec-disk4-5.xml</path>	
+		<class>trectext</class>
+	</corpus>
+</parameters>
