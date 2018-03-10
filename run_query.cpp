@@ -105,13 +105,28 @@ private:
 };
 
 
-int main() {
-	std::string query = "international organized crime";
+int main(int argc, char *argv[]) {
+	std::string query;
+	int top_k;
+
+	if (argc < 3) {
+		std::cerr << "Wrong Arguments. Correct Usage: ./run_query <top_k> <query>" << std::endl;
+		exit(1);
+	} else {
+		top_k = atoi(argv[1]);
+		query = std::string(argv[2]);
+
+		// append any extra terms
+		for (int i = 3; i < argc; i++) {
+			query += " " + std::string(argv[i]);
+		}
+	}
+
 
 	indri::api::QueryEnvironment env;
 	env.addIndex("./indri_cli/index");
 
-	std::vector<indri::api::ScoredExtentResult> results = env.runQuery(query, 10);
+	std::vector<indri::api::ScoredExtentResult> results = env.runQuery(query, top_k);
 	std::vector<std::string> documentNames = env.documentMetadata(results, "docno");
 	
 	std::vector<indri::api::ParsedDocument *> documents = env.documents(results);
