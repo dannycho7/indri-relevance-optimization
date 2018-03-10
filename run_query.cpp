@@ -3,8 +3,21 @@
 #include <cmath>
 #include <string>
 #include <sstream>
+#include <cstdlib>
+#include <cstdio>
 #include <indri/QueryEnvironment.hpp>
 #include <indri/TFIDFTermScoreFunction.hpp>
+
+struct SCOREOUTPUT {
+	double maxScore;
+	double avgScore;
+	double totalScore;
+	SCOREOUTPUT() {
+		maxScore = 0;
+		avgScore = 0;
+		totalScore = 0;
+	}
+};
 
 class ReScoringEnvironment {
 public:
@@ -16,8 +29,8 @@ public:
 		this->initialResults = results;
 	}	
 
-	double* multiTermTfIdf(std::string multiTerms) {
-		double *scores = new double[documents.size()];
+	SCOREOUTPUT* multiTermTfIdf(std::string multiTerms, int numTerms) {
+		SCOREOUTPUT *scores = new SCOREOUTPUT[documents.size()];
 
 		std::stringstream terms(multiTerms);
 		std::string term;
@@ -25,11 +38,17 @@ public:
 		while (terms >> term) {
 			double *termScore = this->tfIdf(term);
 			for (int i = 0; i < documents.size(); i++) {
-				scores[i] += termScore[i];
+				scores[i].totalScore += termScore[i];
+				scores[i].maxScore = (scores[i].maxScore > termScore[i]) ? scores[i].maxScore : termScore[i];
 			}
 
 			delete[] termScore;
 		}
+
+		for (int i = 0; i < this->documents.size(); i++) {
+			scores[i].avgScore = scores[i].totalScore / numTerms;
+		}
+
 		return scores;
 	}
 
@@ -45,8 +64,8 @@ public:
 		return scores;
 	}
 
-	double* bm25(std::string qterms, double k1 = 1.2, double b = 0.75) {
-		double *scores = new double[documents.size()];
+	SCOREOUTPUT* bm25(std::string qterms, int numTerms, double k1 = 1.2, double b = 0.75) {
+		SCOREOUTPUT *scores = new SCOREOUTPUT[documents.size()];
 		std::stringstream terms(qterms);
 		std::string term;		
 		double avgLen = this->getAvgDocLength();
@@ -57,8 +76,15 @@ public:
 			for (int i = 0; i < documents.size(); i++) {
 				double tf = getTermFrequency(term, documents[i]->content);
 				double docLength = this->queryenv.documentLength(this->initialResults[i].document);
-				scores[i] += idf * tf * (k1 + 1) / (tf + k1 * (1 - b + (b * docLength / avgLen)));
-			}	
+				double bm25Score = idf * tf * (k1 + 1) / (tf + k1 * (1 - b + (b * docLength / avgLen)));
+				
+				scores[i].totalScore += bm25Score;
+				scores[i].maxScore = (scores[i].maxScore > bm25Score) ? scores[i].maxScore : bm25Score;
+			}
+		}
+
+		for (int i = 0; i < documents.size(); i++) {
+			scores[i].avgScore = scores[i].totalScore / numTerms;
 		}
 
 		return scores;
@@ -130,13 +156,23 @@ int main(int argc, char *argv[]) {
 	std::vector<std::string> documentNames = env.documentMetadata(results, "docno");
 	
 	std::vector<indri::api::ParsedDocument *> documents = env.documents(results);
+	
+	int numTerms = argc - 2;
 	ReScoringEnvironment *scorer = new ReScoringEnvironment(env, documents, results);
-	double *tfIdfScores = scorer->multiTermTfIdf(query);
-	double *bm25Scores = scorer->bm25(query);
+	SCOREOUTPUT *tfIdfScores = scorer->multiTermTfIdf(query, numTerms);
+	SCOREOUTPUT *bm25Scores = scorer->bm25(query, numTerms);
 	
 	for(int i = 0; i < results.size(); i++) {
 		double score = results[i].score;
-		std::string docName = documentNames[i];
-		std::cout << docName << " " << score << " " << tfIdfScores[i] << " " << bm25Scores[i] << std::endl;
+		const char *docName = documentNames[i].c_str();
+		
+		printf("%s %.5f %.5f %.5f %.5f %.5f %.5f\n",
+			docName,
+			bm25Scores[i].totalScore,
+			tfIdfScores[i].totalScore,
+			bm25Scores[i].maxScore,
+			tfIdfScores[i].maxScore,
+			bm25Scores[i].avgScore,
+			tfIdfScores[i].avgScore);
 	}
 }
