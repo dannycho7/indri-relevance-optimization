@@ -23,7 +23,7 @@ public:
 		std::string term;
 		
 		while (terms >> term) {
-			double *termScore = tfIdf(term);
+			double *termScore = this->tfIdf(term);
 			for (int i = 0; i < documents.size(); i++) {
 				scores[i] += termScore[i];
 			}
@@ -35,18 +35,41 @@ public:
 
 	double* tfIdf(std::string term) {
 		double *scores = new double[documents.size()];
-		double df = (double) this->queryenv.documentCount() / this->queryenv.documentCount(term);
-		double idf = -log(1/df);
+		double idf = this->getIdf(term);
 
 		for (int i = 0; i < documents.size(); i++) {
-			double tf = getTermFrequency(term, this->documents[i]->content);
+			double tf = this->getTermFrequency(term, this->documents[i]->content);
 			scores[i] = tf * idf;
 		}
 
 		return scores;
 	}
 
+	double* bm25(std::string qterms, double k1 = 1.2, double b = 0.75) {
+		double *scores = new double[documents.size()];
+		std::stringstream terms(qterms);
+		std::string term;		
+		double avgLen = this->getAvgDocLength();
+
+		while (terms >> term) {
+			double idf = getIdf(term);
+
+			for (int i = 0; i < documents.size(); i++) {
+				double tf = getTermFrequency(term, documents[i]->content);
+				double docLength = this->queryenv.documentLength(this->initialResults[i].document);
+				scores[i] += idf * tf * (k1 + 1) / (tf + k1 * (1 - b + (b * docLength / avgLen)));
+			}	
+		}
+
+		return scores;
+	}
+
 private:
+	double getIdf(std::string term) {
+		double df = (double) this->queryenv.documentCount() / this->queryenv.documentCount(term);
+		return -log(1/df);
+	}
+
 	double getTermFrequency(std::string searchTerm, std::string content) {
 		int occurrences = 0;
 		std::string searchTermStem = this->queryenv.stemTerm(searchTerm);
@@ -94,10 +117,11 @@ int main() {
 	std::vector<indri::api::ParsedDocument *> documents = env.documents(results);
 	ReScoringEnvironment *scorer = new ReScoringEnvironment(env, documents, results);
 	double *tfIdfScores = scorer->multiTermTfIdf(query);
+	double *bm25Scores = scorer->bm25(query);
 	
 	for(int i = 0; i < results.size(); i++) {
 		double score = results[i].score;
 		std::string docName = documentNames[i];
-		std::cout << docName << " " << score << " " << tfIdfScores[i]<< std::endl;
+		std::cout << docName << " " << score << " " << tfIdfScores[i] << " " << bm25Scores[i] << std::endl;
 	}
 }
