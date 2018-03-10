@@ -1,3 +1,4 @@
+*.swp
 run_query
 index/
 results.*
