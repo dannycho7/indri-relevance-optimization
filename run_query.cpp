@@ -21,12 +21,11 @@ struct SCOREOUTPUT {
 
 class ReScoringEnvironment {
 public:
-	ReScoringEnvironment(indri::api::QueryEnvironment &env,
-				std::vector <indri::api::ParsedDocument *> &documents,
-				std::vector<indri::api::ScoredExtentResult> &results) {
+	ReScoringEnvironment(indri::api::QueryEnvironment &env, std::vector<indri::api::ScoredExtentResult> &results) {
 		this->queryenv = env;
-		this->documents = documents;
-		this->initialResults = results;
+		this->initialResults = results;	
+		this->documents = env.documents(results);
+		this->avgDocLength = this->getAvgDocLength(env.documentCount());
 	}	
 
 	SCOREOUTPUT* multiTermTfIdf(std::string multiTerms, int numTerms) {
@@ -68,7 +67,6 @@ public:
 		SCOREOUTPUT *scores = new SCOREOUTPUT[documents.size()];
 		std::stringstream terms(qterms);
 		std::string term;		
-		double avgLen = this->getAvgDocLength();
 
 		while (terms >> term) {
 			double idf = getIdf(term);
@@ -76,7 +74,7 @@ public:
 			for (int i = 0; i < documents.size(); i++) {
 				double tf = getTermFrequency(term, documents[i]->content);
 				double docLength = this->queryenv.documentLength(this->initialResults[i].document);
-				double bm25Score = idf * tf * (k1 + 1) / (tf + k1 * (1 - b + (b * docLength / avgLen)));
+				double bm25Score = idf * tf * (k1 + 1) / (tf + k1 * (1 - b + (b * docLength / this->avgDocLength)));
 				
 				scores[i].totalScore += bm25Score;
 				scores[i].maxScore = (scores[i].maxScore > bm25Score) ? scores[i].maxScore : bm25Score;
@@ -115,19 +113,19 @@ private:
 		return (double) occurrences / terms;
 	}
 	
-	// Though this gets the average doc length of the resulting documents, it should suffice since we're looking at relative rankings
-	double getAvgDocLength() {
+	double getAvgDocLength(int numDocs) {
 		int totalDocLength = 0;
-		for (int i = 0; i < this->documents.size(); i++) {
-			totalDocLength += queryenv.documentLength(this->initialResults[i].document);
+		for (int i = 1; i <= numDocs; i++) {
+			totalDocLength += queryenv.documentLength(i);
 		}
 
-		return (double) totalDocLength / this->documents.size();
+		return (double) totalDocLength / numDocs;
 	}
-
+	
 	indri::api::QueryEnvironment queryenv;
 	std::vector <indri::api::ParsedDocument *> documents;
-	std::vector<indri::api::ScoredExtentResult> initialResults; 
+	std::vector<indri::api::ScoredExtentResult> initialResults;
+	double avgDocLength;
 };
 
 
@@ -155,10 +153,9 @@ int main(int argc, char *argv[]) {
 	std::vector<indri::api::ScoredExtentResult> results = env.runQuery(query, top_k);
 	std::vector<std::string> documentNames = env.documentMetadata(results, "docno");
 	
-	std::vector<indri::api::ParsedDocument *> documents = env.documents(results);
-	
 	int numTerms = argc - 2;
-	ReScoringEnvironment *scorer = new ReScoringEnvironment(env, documents, results);
+
+	ReScoringEnvironment *scorer = new ReScoringEnvironment(env, results);
 	SCOREOUTPUT *tfIdfScores = scorer->multiTermTfIdf(query, numTerms);
 	SCOREOUTPUT *bm25Scores = scorer->bm25(query, numTerms);
 	
