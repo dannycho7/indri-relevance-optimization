@@ -1,5 +1,5 @@
 ## your application name here
-APP=run_query
+APP=generate_training_data
 SRC=$(APP).cpp
 ## extra object files for your app here
 OBJ=ReScoringEnvironment.o

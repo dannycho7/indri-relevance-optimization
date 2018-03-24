@@ -1,5 +1,7 @@
 *.o
 *.swp
+generate_training_data
+train.txt
 run_query
 index/
 results.*
