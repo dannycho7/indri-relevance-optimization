@@ -1,0 +1,1005 @@
+<parameters>
+	<index>./indri_cli/index</index>
+	<count>10</count>
+	<trecFormat>true</trecFormat>
+	<query>
+		<number>301</number>
+		<text>international organized crime</text>
+	</query>
+	<query>
+		<number>302</number>
+		<text>poliomyeliti post polio</text>
+	</query>
+	<query>
+		<number>303</number>
+		<text>hubble telescope achievement</text>
+	</query>
+	<query>
+		<number>304</number>
+		<text>endanger species mammal</text>
+	</query>
+	<query>
+		<number>305</number>
+		<text>dangerous vehicle</text>
+	</query>
+	<query>
+		<number>306</number>
+		<text>africa civilian death</text>
+	</query>
+	<query>
+		<number>307</number>
+		<text>new hydroelectric project</text>
+	</query>
+	<query>
+		<number>308</number>
+		<text>implant dentistry</text>
+	</query>
+	<query>
+		<number>309</number>
+		<text>rap crime</text>
+	</query>
+	<query>
+		<number>310</number>
+		<text>radio wave brain cancer</text>
+	</query>
+	<query>
+		<number>311</number>
+		<text>industrial espionage</text>
+	</query>
+	<query>
+		<number>312</number>
+		<text>hydroponics</text>
+	</query>
+	<query>
+		<number>313</number>
+		<text>magnetic levitate maglev</text>
+	</query>
+	<query>
+		<number>314</number>
+		<text>marine vegetation</text>
+	</query>
+	<query>
+		<number>315</number>
+		<text>unexplained highway accident</text>
+	</query>
+	<query>
+		<number>316</number>
+		<text>polygamy polyandry polygyny</text>
+	</query>
+	<query>
+		<number>317</number>
+		<text>unsolicited faxe</text>
+	</query>
+	<query>
+		<number>318</number>
+		<text>best retirement country</text>
+	</query>
+	<query>
+		<number>319</number>
+		<text>new fuel source</text>
+	</query>
+	<query>
+		<number>320</number>
+		<text>undersea fiber optic cable</text>
+	</query>
+	<query>
+		<number>321</number>
+		<text>women parliament</text>
+	</query>
+	<query>
+		<number>322</number>
+		<text>international art crime</text>
+	</query>
+	<query>
+		<number>323</number>
+		<text>literary journalist plagiarism</text>
+	</query>
+	<query>
+		<number>324</number>
+		<text>argentina britain relations</text>
+	</query>
+	<query>
+		<number>325</number>
+		<text>cult lifestyle</text>
+	</query>
+	<query>
+		<number>326</number>
+		<text>ferry sink</text>
+	</query>
+	<query>
+		<number>327</number>
+		<text>modern slavery</text>
+	</query>
+	<query>
+		<number>328</number>
+		<text>pope beatification</text>
+	</query>
+	<query>
+		<number>329</number>
+		<text>mexico air pollution</text>
+	</query>
+	<query>
+		<number>330</number>
+		<text>iran iraq cooperation</text>
+	</query>
+	<query>
+		<number>331</number>
+		<text>world bank criticism</text>
+	</query>
+	<query>
+		<number>332</number>
+		<text>income tax evasion</text>
+	</query>
+	<query>
+		<number>333</number>
+		<text>antibiotic bacteria disease</text>
+	</query>
+	<query>
+		<number>334</number>
+		<text>export control cryptography</text>
+	</query>
+	<query>
+		<number>335</number>
+		<text>adoptive biological parent</text>
+	</query>
+	<query>
+		<number>336</number>
+		<text>black bear attack</text>
+	</query>
+	<query>
+		<number>337</number>
+		<text>viral hepatitis</text>
+	</query>
+	<query>
+		<number>338</number>
+		<text>risk aspirin</text>
+	</query>
+	<query>
+		<number>339</number>
+		<text>alzheimer drug treatment</text>
+	</query>
+	<query>
+		<number>340</number>
+		<text>land mine ban</text>
+	</query>
+	<query>
+		<number>341</number>
+		<text>airport security</text>
+	</query>
+	<query>
+		<number>342</number>
+		<text>diplomatic expulsion</text>
+	</query>
+	<query>
+		<number>343</number>
+		<text>police death</text>
+	</query>
+	<query>
+		<number>344</number>
+		<text>abuse e mail</text>
+	</query>
+	<query>
+		<number>345</number>
+		<text>overseas tobacco sales</text>
+	</query>
+	<query>
+		<number>346</number>
+		<text>educational standard</text>
+	</query>
+	<query>
+		<number>347</number>
+		<text>wildlife extinction</text>
+	</query>
+	<query>
+		<number>348</number>
+		<text>agoraphobia</text>
+	</query>
+	<query>
+		<number>349</number>
+		<text>metabolism</text>
+	</query>
+	<query>
+		<number>350</number>
+		<text>health computer terminal</text>
+	</query>
+	<query>
+		<number>351</number>
+		<text>falkland petroleum exploration</text>
+	</query>
+	<query>
+		<number>352</number>
+		<text>britain chunnel impact</text>
+	</query>
+	<query>
+		<number>353</number>
+		<text>antarctica exploration</text>
+	</query>
+	<query>
+		<number>354</number>
+		<text>journalist risk</text>
+	</query>
+	<query>
+		<number>355</number>
+		<text>ocean remote sense</text>
+	</query>
+	<query>
+		<number>356</number>
+		<text>postmenopausal estrogen britain</text>
+	</query>
+	<query>
+		<number>357</number>
+		<text>territorial waters dispute</text>
+	</query>
+	<query>
+		<number>358</number>
+		<text>blood alcohol fatality</text>
+	</query>
+	<query>
+		<number>359</number>
+		<text>mutual fund predict</text>
+	</query>
+	<query>
+		<number>360</number>
+		<text>drug legalize benefit</text>
+	</query>
+	<query>
+		<number>361</number>
+		<text>clothing sweatshop</text>
+	</query>
+	<query>
+		<number>362</number>
+		<text>human smuggle</text>
+	</query>
+	<query>
+		<number>363</number>
+		<text>transportation tunnel disaster</text>
+	</query>
+	<query>
+		<number>364</number>
+		<text>rabies</text>
+	</query>
+	<query>
+		<number>365</number>
+		<text>el nino</text>
+	</query>
+	<query>
+		<number>366</number>
+		<text>commercial cyanide use</text>
+	</query>
+	<query>
+		<number>367</number>
+		<text>piracy</text>
+	</query>
+	<query>
+		<number>368</number>
+		<text>vitro fertilize</text>
+	</query>
+	<query>
+		<number>369</number>
+		<text>anorexia nervosa bulimia</text>
+	</query>
+	<query>
+		<number>370</number>
+		<text>food drug law</text>
+	</query>
+	<query>
+		<number>371</number>
+		<text>health insurance holistic</text>
+	</query>
+	<query>
+		<number>372</number>
+		<text>native america casino</text>
+	</query>
+	<query>
+		<number>373</number>
+		<text>encryption equipment export</text>
+	</query>
+	<query>
+		<number>374</number>
+		<text>nobel prize winner</text>
+	</query>
+	<query>
+		<number>375</number>
+		<text>hydrogen energy</text>
+	</query>
+	<query>
+		<number>376</number>
+		<text>world court</text>
+	</query>
+	<query>
+		<number>377</number>
+		<text>cigar smoking</text>
+	</query>
+	<query>
+		<number>378</number>
+		<text>euro opposition</text>
+	</query>
+	<query>
+		<number>379</number>
+		<text>mainstream</text>
+	</query>
+	<query>
+		<number>380</number>
+		<text>obese medical treatment</text>
+	</query>
+	<query>
+		<number>381</number>
+		<text>alternative medicine</text>
+	</query>
+	<query>
+		<number>382</number>
+		<text>hydrogen fuel automobile</text>
+	</query>
+	<query>
+		<number>383</number>
+		<text>mental illness drug</text>
+	</query>
+	<query>
+		<number>384</number>
+		<text>space station moon</text>
+	</query>
+	<query>
+		<number>385</number>
+		<text>hybrid fuel car</text>
+	</query>
+	<query>
+		<number>386</number>
+		<text>teaching disabled children</text>
+	</query>
+	<query>
+		<number>387</number>
+		<text>radioactive waste</text>
+	</query>
+	<query>
+		<number>388</number>
+		<text>organic soil enhance</text>
+	</query>
+	<query>
+		<number>389</number>
+		<text>illegal technology transfer</text>
+	</query>
+	<query>
+		<number>390</number>
+		<text>orphan drug</text>
+	</query>
+	<query>
+		<number>391</number>
+		<text>rd drug price</text>
+	</query>
+	<query>
+		<number>392</number>
+		<text>robot</text>
+	</query>
+	<query>
+		<number>393</number>
+		<text>mercy killing</text>
+	</query>
+	<query>
+		<number>394</number>
+		<text>home schooling</text>
+	</query>
+	<query>
+		<number>395</number>
+		<text>tourism</text>
+	</query>
+	<query>
+		<number>396</number>
+		<text>sick building syndrome</text>
+	</query>
+	<query>
+		<number>397</number>
+		<text>automobile recall</text>
+	</query>
+	<query>
+		<number>398</number>
+		<text>dismantle europe arsenal</text>
+	</query>
+	<query>
+		<number>399</number>
+		<text>oceanography vessel</text>
+	</query>
+	<query>
+		<number>400</number>
+		<text>amazon rain forest</text>
+	</query>
+	<query>
+		<number>401</number>
+		<text>foreign minority germany</text>
+	</query>
+	<query>
+		<number>402</number>
+		<text>behavior genetics</text>
+	</query>
+	<query>
+		<number>403</number>
+		<text>osteoporosi</text>
+	</query>
+	<query>
+		<number>404</number>
+		<text>ireland peace talks</text>
+	</query>
+	<query>
+		<number>405</number>
+		<text>cosmic event</text>
+	</query>
+	<query>
+		<number>406</number>
+		<text>parkinson disease</text>
+	</query>
+	<query>
+		<number>407</number>
+		<text>poach wildlife preserve</text>
+	</query>
+	<query>
+		<number>408</number>
+		<text>tropical storm</text>
+	</query>
+	<query>
+		<number>409</number>
+		<text>legal pan 103</text>
+	</query>
+	<query>
+		<number>410</number>
+		<text>schengen agreement</text>
+	</query>
+	<query>
+		<number>411</number>
+		<text>salvage shipwreck treasure</text>
+	</query>
+	<query>
+		<number>412</number>
+		<text>airport security</text>
+	</query>
+	<query>
+		<number>413</number>
+		<text>steel production</text>
+	</query>
+	<query>
+		<number>414</number>
+		<text>cuba sugar export</text>
+	</query>
+	<query>
+		<number>415</number>
+		<text>drug golden triangle</text>
+	</query>
+	<query>
+		<number>416</number>
+		<text>three gorge project</text>
+	</query>
+	<query>
+		<number>417</number>
+		<text>creativity</text>
+	</query>
+	<query>
+		<number>418</number>
+		<text>quilt income</text>
+	</query>
+	<query>
+		<number>419</number>
+		<text>recycle automobile tire</text>
+	</query>
+	<query>
+		<number>420</number>
+		<text>carbon monoxide poison</text>
+	</query>
+	<query>
+		<number>421</number>
+		<text>industrial waste disposal</text>
+	</query>
+	<query>
+		<number>422</number>
+		<text>art stolen forge</text>
+	</query>
+	<query>
+		<number>423</number>
+		<text>milosevic mirjana markovic</text>
+	</query>
+	<query>
+		<number>424</number>
+		<text>suicide</text>
+	</query>
+	<query>
+		<number>425</number>
+		<text>counterfeit money</text>
+	</query>
+	<query>
+		<number>426</number>
+		<text>law enforce dogs</text>
+	</query>
+	<query>
+		<number>427</number>
+		<text>uv damage eyes</text>
+	</query>
+	<query>
+		<number>428</number>
+		<text>decline birth rate</text>
+	</query>
+	<query>
+		<number>429</number>
+		<text>legionnaire disease</text>
+	</query>
+	<query>
+		<number>430</number>
+		<text>killer bee attack</text>
+	</query>
+	<query>
+		<number>431</number>
+		<text>robot technology</text>
+	</query>
+	<query>
+		<number>432</number>
+		<text>profile motorist police</text>
+	</query>
+	<query>
+		<number>433</number>
+		<text>greece philosophy stoicism</text>
+	</query>
+	<query>
+		<number>434</number>
+		<text>estonia economy</text>
+	</query>
+	<query>
+		<number>435</number>
+		<text>curb population growth</text>
+	</query>
+	<query>
+		<number>436</number>
+		<text>railway accident</text>
+	</query>
+	<query>
+		<number>437</number>
+		<text>deregulation gas electric</text>
+	</query>
+	<query>
+		<number>438</number>
+		<text>tourism increase</text>
+	</query>
+	<query>
+		<number>439</number>
+		<text>invention scientific discovery</text>
+	</query>
+	<query>
+		<number>440</number>
+		<text>child labor</text>
+	</query>
+	<query>
+		<number>441</number>
+		<text>lyme disease</text>
+	</query>
+	<query>
+		<number>442</number>
+		<text>heroic acts</text>
+	</query>
+	<query>
+		<number>443</number>
+		<text>investment africa</text>
+	</query>
+	<query>
+		<number>444</number>
+		<text>supercritic fluid</text>
+	</query>
+	<query>
+		<number>445</number>
+		<text>women clergy</text>
+	</query>
+	<query>
+		<number>446</number>
+		<text>tourist violence</text>
+	</query>
+	<query>
+		<number>447</number>
+		<text>stirl engine</text>
+	</query>
+	<query>
+		<number>448</number>
+		<text>ship loss</text>
+	</query>
+	<query>
+		<number>449</number>
+		<text>antibiotic ineffective</text>
+	</query>
+	<query>
+		<number>450</number>
+		<text>king hussein peace</text>
+	</query>
+	<query>
+		<number>601</number>
+		<text>turkey iraq water</text>
+	</query>
+	<query>
+		<number>602</number>
+		<text>czech slovak sovereignty</text>
+	</query>
+	<query>
+		<number>603</number>
+		<text>tobacco cigarette lawsuit</text>
+	</query>
+	<query>
+		<number>604</number>
+		<text>lyme disease arthritis</text>
+	</query>
+	<query>
+		<number>605</number>
+		<text>great britain health care</text>
+	</query>
+	<query>
+		<number>606</number>
+		<text>leg trap ban</text>
+	</query>
+	<query>
+		<number>607</number>
+		<text>human genetic code</text>
+	</query>
+	<query>
+		<number>608</number>
+		<text>tax social security</text>
+	</query>
+	<query>
+		<number>609</number>
+		<text>capita alcohol consumption</text>
+	</query>
+	<query>
+		<number>610</number>
+		<text>minimum wage adverse impact</text>
+	</query>
+	<query>
+		<number>611</number>
+		<text>kurd germany violence</text>
+	</query>
+	<query>
+		<number>612</number>
+		<text>tibet protest</text>
+	</query>
+	<query>
+		<number>613</number>
+		<text>berlin wall disposal</text>
+	</query>
+	<query>
+		<number>614</number>
+		<text>flavr savr tomato</text>
+	</query>
+	<query>
+		<number>615</number>
+		<text>timber export asia</text>
+	</query>
+	<query>
+		<number>616</number>
+		<text>volkswagen mexico</text>
+	</query>
+	<query>
+		<number>617</number>
+		<text>russia cuba economy</text>
+	</query>
+	<query>
+		<number>618</number>
+		<text>ayatollah khomeini death</text>
+	</query>
+	<query>
+		<number>619</number>
+		<text>winnie mandela scandal</text>
+	</query>
+	<query>
+		<number>620</number>
+		<text>france nuclear test</text>
+	</query>
+	<query>
+		<number>621</number>
+		<text>women ordain church england</text>
+	</query>
+	<query>
+		<number>622</number>
+		<text>price fix</text>
+	</query>
+	<query>
+		<number>623</number>
+		<text>toxic chemical weapon</text>
+	</query>
+	<query>
+		<number>624</number>
+		<text>sdi star war</text>
+	</query>
+	<query>
+		<number>625</number>
+		<text>arrest bomb wtc</text>
+	</query>
+	<query>
+		<number>626</number>
+		<text>human stampede</text>
+	</query>
+	<query>
+		<number>627</number>
+		<text>russia food crisis</text>
+	</query>
+	<query>
+		<number>628</number>
+		<text>invasion panama</text>
+	</query>
+	<query>
+		<number>629</number>
+		<text>abortion clinic attack</text>
+	</query>
+	<query>
+		<number>630</number>
+		<text>gulf war syndrome</text>
+	</query>
+	<query>
+		<number>631</number>
+		<text>mandela south africa president</text>
+	</query>
+	<query>
+		<number>632</number>
+		<text>southeast asia tin mining</text>
+	</query>
+	<query>
+		<number>633</number>
+		<text>welsh devolution</text>
+	</query>
+	<query>
+		<number>634</number>
+		<text>l tryptophan death</text>
+	</query>
+	<query>
+		<number>635</number>
+		<text>doctor assist suicide</text>
+	</query>
+	<query>
+		<number>636</number>
+		<text>jury duty exemption</text>
+	</query>
+	<query>
+		<number>637</number>
+		<text>human growth hormone hgh</text>
+	</query>
+	<query>
+		<number>638</number>
+		<text>wrongful conviction</text>
+	</query>
+	<query>
+		<number>639</number>
+		<text>consumer line shop</text>
+	</query>
+	<query>
+		<number>640</number>
+		<text>maternity leave policy</text>
+	</query>
+	<query>
+		<number>641</number>
+		<text>valdez wildlife marine life</text>
+	</query>
+	<query>
+		<number>642</number>
+		<text>tiananmen square protest</text>
+	</query>
+	<query>
+		<number>643</number>
+		<text>salmon dam pacific northwest</text>
+	</query>
+	<query>
+		<number>644</number>
+		<text>exotic animal import</text>
+	</query>
+	<query>
+		<number>645</number>
+		<text>software piracy</text>
+	</query>
+	<query>
+		<number>646</number>
+		<text>food stamp increase</text>
+	</query>
+	<query>
+		<number>647</number>
+		<text>windmill electricity</text>
+	</query>
+	<query>
+		<number>648</number>
+		<text>family leave law</text>
+	</query>
+	<query>
+		<number>649</number>
+		<text>computer virus</text>
+	</query>
+	<query>
+		<number>650</number>
+		<text>tax evasion indict</text>
+	</query>
+	<query>
+		<number>651</number>
+		<text>ethnic population</text>
+	</query>
+	<query>
+		<number>652</number>
+		<text>oic balkan 1990s</text>
+	</query>
+	<query>
+		<number>653</number>
+		<text>eta basque terrorism</text>
+	</query>
+	<query>
+		<number>654</number>
+		<text>sex school</text>
+	</query>
+	<query>
+		<number>655</number>
+		<text>add diagnosis treatment</text>
+	</query>
+	<query>
+		<number>656</number>
+		<text>lead poison children</text>
+	</query>
+	<query>
+		<number>657</number>
+		<text>school prayer ban</text>
+	</query>
+	<query>
+		<number>658</number>
+		<text>teenage pregnancy</text>
+	</query>
+	<query>
+		<number>659</number>
+		<text>cruise health safety</text>
+	</query>
+	<query>
+		<number>660</number>
+		<text>whale watch california</text>
+	</query>
+	<query>
+		<number>661</number>
+		<text>melanoma treatment cause</text>
+	</query>
+	<query>
+		<number>662</number>
+		<text>telemarketer protection</text>
+	</query>
+	<query>
+		<number>663</number>
+		<text>agent orange exposure</text>
+	</query>
+	<query>
+		<number>664</number>
+		<text>america indian museum</text>
+	</query>
+	<query>
+		<number>665</number>
+		<text>poverty africa sub sahara</text>
+	</query>
+	<query>
+		<number>666</number>
+		<text>thatch resignation impact</text>
+	</query>
+	<query>
+		<number>667</number>
+		<text>unmarried partner household</text>
+	</query>
+	<query>
+		<number>668</number>
+		<text>poverty disease</text>
+	</query>
+	<query>
+		<number>669</number>
+		<text>islam revolution</text>
+	</query>
+	<query>
+		<number>670</number>
+		<text>election apathy</text>
+	</query>
+	<query>
+		<number>671</number>
+		<text>salvation army benefit</text>
+	</query>
+	<query>
+		<number>672</number>
+		<text>nra membership profile</text>
+	</query>
+	<query>
+		<number>673</number>
+		<text>soviet withdrawal afghanistan</text>
+	</query>
+	<query>
+		<number>674</number>
+		<text>greenpeace prosecute</text>
+	</query>
+	<query>
+		<number>675</number>
+		<text>olympic training swimming</text>
+	</query>
+	<query>
+		<number>676</number>
+		<text>poppy cultivation</text>
+	</query>
+	<query>
+		<number>677</number>
+		<text>leaning tower pisa</text>
+	</query>
+	<query>
+		<number>678</number>
+		<text>joint custody impact</text>
+	</query>
+	<query>
+		<number>679</number>
+		<text>opening adoption record</text>
+	</query>
+	<query>
+		<number>680</number>
+		<text>immigrant spain school</text>
+	</query>
+	<query>
+		<number>681</number>
+		<text>wind power location</text>
+	</query>
+	<query>
+		<number>682</number>
+		<text>adult immigrant english</text>
+	</query>
+	<query>
+		<number>683</number>
+		<text>czechoslovakia breakup</text>
+	</query>
+	<query>
+		<number>684</number>
+		<text>part time benefit</text>
+	</query>
+	<query>
+		<number>685</number>
+		<text>oscar winner selection</text>
+	</query>
+	<query>
+		<number>686</number>
+		<text>argentina peg dollar</text>
+	</query>
+	<query>
+		<number>687</number>
+		<text>northern ireland industry</text>
+	</query>
+	<query>
+		<number>688</number>
+		<text>non media bias</text>
+	</query>
+	<query>
+		<number>689</number>
+		<text>family plan aid</text>
+	</query>
+	<query>
+		<number>690</number>
+		<text>college education advantage</text>
+	</query>
+	<query>
+		<number>691</number>
+		<text>clear cutting forest</text>
+	</query>
+	<query>
+		<number>692</number>
+		<text>prostate cancer detection treatment</text>
+	</query>
+	<query>
+		<number>693</number>
+		<text>newspaper electronic media</text>
+	</query>
+	<query>
+		<number>694</number>
+		<text>compost pile</text>
+	</query>
+	<query>
+		<number>695</number>
+		<text>white collar crime sentence</text>
+	</query>
+	<query>
+		<number>696</number>
+		<text>safety plastic surgery</text>
+	</query>
+	<query>
+		<number>697</number>
+		<text>air traffic controller</text>
+	</query>
+	<query>
+		<number>698</number>
+		<text>literacy rate africa</text>
+	</query>
+	<query>
+		<number>699</number>
+		<text>term limit</text>
+	</query>
+	<query>
+		<number>700</number>
+		<text>gasoline tax</text>
+	</query>
+</parameters>
