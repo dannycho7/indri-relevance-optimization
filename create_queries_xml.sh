@@ -7,7 +7,7 @@ fi
 
 echo "<parameters>"
 echo "	<index>$1</index>"
-echo "	<count>10</count>"
+echo "	<count>2000</count>"
 echo "	<trecFormat>true</trecFormat>"
 
 awk '{print "\t<query>"; print "\t\t<number>"$1"</number>"; $1 = ""; print "\t\t<text>"substr($0, 2)"</text>"; print "\t</query>"}' < $2

@@ -1,6 +1,6 @@
 <parameters>
 	<index>./indri_cli/index</index>
-	<count>10</count>
+	<count>2000</count>
 	<trecFormat>true</trecFormat>
 	<query>
 		<number>301</number>
