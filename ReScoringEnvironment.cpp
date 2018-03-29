@@ -76,8 +76,9 @@ SCOREOUTPUT* ReScoringEnvironment::bm25(std::string qterms, int numTerms, double
 }
 
 double ReScoringEnvironment::getIdf(std::string term) {
-	double df = (double) this->queryenv.documentCount() / this->queryenv.documentCount(term);
-	return -log(1/df);
+	double df = (double) this->queryenv.documentCount(term);
+	double numDocs = this->queryenv.documentCount();
+	return log(numDocs / df);
 }
 
 double ReScoringEnvironment::getTermFrequency(std::string searchTerm, std::string content) {
