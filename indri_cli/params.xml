@@ -1,7 +1,9 @@
 <parameters>
-	<index>/home/dannycho7/test-indri/index</index>
+	<index>/home/dannycho7/indri-relevance-score-optimization/indri_cli/index</index>
 	<corpus>
 		<path>/mnt/data1/jinjin/trec45_data/trec-disk4-5.xml</path>	
 		<class>trectext</class>
 	</corpus>
+
+	<stemmer><name>Krovetz</name></stemmer>
 </parameters>
