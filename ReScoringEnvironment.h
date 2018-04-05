@@ -3,10 +3,12 @@
 #include <indri/QueryEnvironment.hpp>
 
 struct SCOREOUTPUT {
+	double minScore;
 	double maxScore;
 	double avgScore;
 	double totalScore;
 	SCOREOUTPUT() {
+		minScore = INT_MAX;
 		maxScore = 0;
 		avgScore = 0;
 		totalScore = 0;

@@ -26,6 +26,7 @@ SCOREOUTPUT* ReScoringEnvironment::multiTermTfIdf(std::string multiTerms, int nu
 		for (int i = 0; i < documents.size(); i++) {
 			scores[i].totalScore += termScore[i];
 			scores[i].maxScore = (scores[i].maxScore > termScore[i]) ? scores[i].maxScore : termScore[i];
+			scores[i].minScore = (scores[i].minScore < termScore[i]) ? scores[i].minScore : termScore[i];
 		}
 
 		delete[] termScore;
@@ -65,6 +66,7 @@ SCOREOUTPUT* ReScoringEnvironment::bm25(std::string qterms, int numTerms, double
 			
 			scores[i].totalScore += bm25Score;
 			scores[i].maxScore = (scores[i].maxScore > bm25Score) ? scores[i].maxScore : bm25Score;
+			scores[i].minScore = (scores[i].minScore < bm25Score) ? scores[i].minScore : bm25Score;
 		}
 	}
 

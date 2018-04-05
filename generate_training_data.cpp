@@ -91,13 +91,15 @@ int main(int argc, char *argv[]) {
 				rel = 1;
 			}
 
-			printf("%i qid:%i 1:%.5f 2:%.5f 3:%.5f 4:%.5f 5:%.5f 6:%.5f #%s \n",
+			printf("%i qid:%i 1:%.5f 2:%.5f 3:%.5f 4:%.5f 5:%.5f 6:%.5f 7:%.5f 8:%.5f #%s \n",
 				rel,
 				qid,
 				bm25Scores[i].totalScore,
 				tfIdfScores[i].totalScore,
 				bm25Scores[i].maxScore,
 				tfIdfScores[i].maxScore,
+				bm25Scores[i].minScore,
+				tfIdfScores[i].minScore,
 				bm25Scores[i].avgScore,
 				tfIdfScores[i].avgScore,
 				docName);
