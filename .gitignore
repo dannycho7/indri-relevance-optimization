@@ -1,6 +1,7 @@
 *.o
 *.swp
 generate_training_data
+preprocess_features
 train.txt
 run_query
 index/

@@ -19,6 +19,9 @@ all: ReScoringEnvironment.o
 ReScoringEnvironment: ReScoringEnvironment.cpp ReScoringEnvironment.h
 	$(CXX) $(CXXFLAGS) -c ReScoringEnvironment.cpp
 
+preprocess_features: preprocess_features.cpp ReScoringEnvironment.o
+	$(CXX) $(CXXFLAGS) ./preprocess_features.cpp -o ./preprocess_features
+
 clean:
 	rm -f $(APP) $(OBJ)
 
