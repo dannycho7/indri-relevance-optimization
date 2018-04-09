@@ -45,7 +45,11 @@ double* ReScoringEnvironment::tfIdf(std::string term) {
 
 	for (int i = 0; i < documents.size(); i++) {
 		double tf = this->getTermFrequency(term, this->documents[i]->content);
-		scores[i] = tf * idf;
+		if (tf == 0) {
+			scores[i] = 0;
+		} else {
+			scores[i] = (1 + log(tf)) * idf;
+		}
 	}
 
 	return scores;
